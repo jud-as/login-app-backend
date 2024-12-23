@@ -1,4 +1,5 @@
 package com.example.login_auth_api.dto;
 
-public class LoginRequestDTO {
+
+public record LoginRequestDTO (String email, String password){
 }
