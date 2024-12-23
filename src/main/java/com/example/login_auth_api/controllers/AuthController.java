@@ -1,15 +1,11 @@
 package com.example.login_auth_api.controllers;
-
 import com.example.login_auth_api.domain.user.User;
 import com.example.login_auth_api.dto.LoginRequestDTO;
 import com.example.login_auth_api.dto.RegisterRequestDTO;
 import com.example.login_auth_api.dto.ResponseDTO;
 import com.example.login_auth_api.infra.security.TokenService;
 import com.example.login_auth_api.repository.UserRepository;
-import com.fasterxml.jackson.databind.ser.std.ToEmptyObjectSerializer;
 import lombok.RequiredArgsConstructor;
-import org.antlr.v4.runtime.Token;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
